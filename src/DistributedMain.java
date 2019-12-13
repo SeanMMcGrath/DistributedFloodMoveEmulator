@@ -12,14 +12,12 @@ import java.util.concurrent.ForkJoinPool;
  */
 public class DistributedMain {
 
-    private static final String ipAddress = "129.3.127.205";//ip address of my pc when in computer lab
+    private static final String ipAddress = "";//ip address of my pc when in computer lab
     private static final int port = 13188;
-    public static boolean remote = false;
     private static Socket socket;
 
     public static void main(String[] args) {
 
-        remote = true;
         try {
             ServerSocket ss = new ServerSocket(port);
             while (true) {
